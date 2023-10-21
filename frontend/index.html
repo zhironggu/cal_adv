@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="axios.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div id="divTop" >
+    <div class="input-wrapper">
+        <input id="textBox" type="text" value="0" disabled="disabled"/>
+        <div class="input-overlay" id="overlay"></div>
+        <div class="dropdown" id="dropdown">
+            <!-- 下拉框内容 -->
+            <ul id="history">
+            </ul>
+        </div>
+    </div>
+    <table id="tableTop">
+        <tr id="top">
+            <td>
+                <button onclick="compute(this)"> AC</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> Back</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> %</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> /</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="compute(this)"> 7</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 8</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 9</button>
+            </td>
+            <td class="gree">
+                <button onclick="compute(this)"> X</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="compute(this)"> 4</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 5</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 6</button>
+            </td>
+            <td class="gree">
+                <button onclick="compute(this)"> -</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="compute(this)"> 1</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 2</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 3</button>
+            </td>
+            <td class="gree">
+                <button onclick="compute(this)"> +</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="compute(this)"> 00</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> 0</button>
+            </td>
+            <td>
+                <button onclick="compute(this)"> .</button>
+            </td>
+            <td id="sum">
+                <button onclick="compute(this)"> =</button>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <h1>利率计算器</h1>
+        <label for="amount">金额：</label>
+        <input type="text" value="1000" id="amount">
+        <label for="time">时长（月）：</label>
+        <input type="text" value="1" id="time">
+        <br/>
+        <button id="calculate-deposit">计算存款利息</button>
+        <button id="calculate-loan">计算贷款利息</button>
+        <p id="result">利息：0</p>
+    </div>
+</div>
+
+<script>
+
+
+</script>
+</body>
+
+</html>
+

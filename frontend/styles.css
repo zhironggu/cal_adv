@@ -1,0 +1,95 @@
+#divTop {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tableTop {
+    margin: 0 auto;
+}
+
+#tableTop tr td {
+    padding: 5px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button.operator {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#calculate-deposit,
+#calculate-loan {
+    width: 150px;
+    margin-right: 10px;
+}
+.input-wrapper {
+    position: relative;
+}
+
+.input-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* 放在禁用输入元素之上 */
+    background: transparent; /* 透明背景 */
+}
+
+#result {
+    margin-top: 10px;
+}
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.input-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 2;
+    display: none;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover {
+    background-color: #f0f0f0;
+}
